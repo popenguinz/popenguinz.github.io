@@ -931,3 +931,56 @@ body, html {
     position: relative; /* Verhindert Überdeckung */
     z-index: 11; /* Priorisiert den Button */
 }
+
+
+
+/*neu neu neu*/
+
+/* Make sure Legend Button is always visible */
+@media (max-width: 768px) {
+    .site-navigation ul {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align the menu */
+        margin-top: 20px; /* Add spacing from the top */
+    }
+
+    .site-navigation ul li {
+        margin-bottom: 10px; /* Add spacing between links */
+    }
+
+    .site-navigation ul li a[href="legend.html"] {
+        display: block; /* Ensure Legend button is always displayed */
+        color: #FFD700; /* Make it stand out */
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* Fix the overlapping issue */
+    .hero-content {
+        padding-bottom: 50px; /* Add space to avoid overlap */
+    }
+
+    .site-navigation {
+        position: relative;
+        z-index: 10; /* Ensure it doesn’t get hidden behind other elements */
+    }
+
+    .hero {
+        padding-bottom: 100px; /* Ensure sufficient space for all links */
+    }
+}
+
+
+
+/* Adjust Hero Content for Smaller Screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 150px 20px 200px; /* Add padding at the bottom */
+        text-align: center; /* Center everything for better layout */
+    }
+
+    .hero .btn.hero-btn {
+        margin-bottom: 30px; /* Add spacing below the Hero Button */
+    }
+}
+
