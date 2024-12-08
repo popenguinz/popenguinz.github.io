@@ -886,3 +886,48 @@ body, html {
 }
 
 
+/*neu neu*/
+
+/* Fix for Legend Button Visibility on Home Screen */
+@media (max-width: 768px) {
+    .site-navigation ul {
+        position: relative; /* Verhindert Überlappung durch absolute Position */
+        z-index: 10; /* Stellt sicher, dass die Navigation nicht verdeckt */
+    }
+
+    .hero .btn.hero-btn {
+        margin-top: 20px; /* Fügt mehr Abstand hinzu */
+    }
+
+    .site-navigation ul li a {
+        font-size: 0.9rem; /* Kleinere Schrift für Links, um Platz zu sparen */
+        padding: 6px 10px; /* Reduzierte Polsterung für Links */
+    }
+
+    .site-navigation ul li a[href="legend.html"] {
+        display: block; /* Sicherstellen, dass der Legend-Link sichtbar bleibt */
+    }
+
+    .hero-content {
+        margin-bottom: 40px; /* Vergrößert den Platz unter dem Hero-Content */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .site-navigation ul {
+        flex-wrap: wrap; /* Links umbrechen, wenn der Platz nicht ausreicht */
+        justify-content: center; /* Navigation zentrieren */
+        padding: 10px 0; /* Zusätzlicher Innenabstand */
+    }
+
+    .site-navigation ul li {
+        margin-bottom: 10px; /* Abstand zwischen den Links */
+    }
+}
+
+
+.hero .btn.hero-btn {
+    position: relative; /* Verhindert Überdeckung */
+    z-index: 11; /* Priorisiert den Button */
+}
