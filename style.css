@@ -980,3 +980,36 @@ body, html {
     }
 }
 
+
+/*nnnnn*/
+/* Fix Overlapping in Hero Section */
+@media (max-width: 768px) {
+    .hero-content {
+        padding-bottom: 60px; /* Add space below Hero Content */
+    }
+
+    .hero {
+        padding-bottom: 120px; /* Add space for navigation */
+    }
+}
+
+
+/* Highlight and Ensure Legend Button Visibility */
+@media (max-width: 768px) {
+    .site-navigation ul li a[href="legend.html"] {
+        display: block;
+        font-size: 1rem; /* Slightly smaller font */
+        color: #FFD700;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 8px 12px;/* Adjust Hero Padding */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 20px;
+    }
+}
+
+    }
+}
+
