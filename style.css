@@ -815,33 +815,29 @@ body, html {
 
 /*new styles*/
 
-/* Hide navigation links on small screens */
+/* Show Navigation on Small Screens */
 @media (max-width: 768px) {
     .site-navigation ul {
-        /*display: none;*/
+        display: flex; /* Ensure the navigation is visible */
         flex-direction: column;
-        background-color: rgba(0, 43, 91, 0.9);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        z-index: 10;
+        background-color: rgba(0, 43, 91, 0.9); /* Optional background for better visibility */
+        width: 100%; /* Full width for mobile */
         padding: 10px;
-    }
-
-    .site-navigation ul.active {
-        display: flex;
+        position: relative; /* Prevent overlap with other elements */
+        z-index: 10;
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show the toggle button on mobile */
+        font-size: 2rem;
+        color: #fff;
         background: none;
         border: none;
-        color: #fff;
-        font-size: 2rem;
         cursor: pointer;
+        z-index: 11;
     }
 }
+
 
 
 @media (max-width: 768px) {
