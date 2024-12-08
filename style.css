@@ -1,0 +1,810 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #002B5B;
+    background: #E0F7FA;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.site-header {
+    background: linear-gradient(to bottom, #005B96, #E0F7FA);
+    color: #fff;
+    padding: 20px 0;
+}
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-header .logo img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.site-header .logo h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navigation */
+.site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.site-navigation ul li {
+    margin: 0;
+}
+
+.site-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.site-navigation ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn.buy-now {
+    background: #FFD700;
+    color: #002B5B;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn.buy-now:hover {
+    background: #FFC107;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('images/hero_letzte.png') center center / cover no-repeat;
+    padding: 250px 0;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 43, 91, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn.hero-btn {
+    background: #FFD700;
+    color: #002B5B;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 25px 0;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn.hero-btn:hover {
+    background: #FFC107;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* About Section */
+.about-section {
+    position: relative;
+    background: url('images/DALL·E 2024-11-24 23.26.39 - A golden coin labeled with sharp, clear writing engraved in the center, glinting in dramatic lighting. The coin features detailed edges and a re.png') center center / cover no-repeat;
+    padding: 80px 0;
+    color: #fdfcfc;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 43, 91, 0.6);
+    z-index: 0; /* Ensure the overlay stays behind the content */
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    /*align-items: center;  Vertically aligns content */
+    justify-content: space-between; /* Space between text and image */
+    flex-wrap: wrap; /* Stack on smaller screens */
+    gap: 20px; /* Optional gap for better spacing */
+    max-width: 1200px; /* Keeps the content centered and prevents it from stretching too wide */
+    margin: 0 auto; /* Centers the content horizontally */
+}
+
+.about-text {
+    flex: 1 1 35%; /* Takes 50% of the width */
+    max-width: 35%; /* Restricts the text to 50% width */
+    padding: 30px; /* Adds inner spacing */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    text-align: left; /* Aligns all text to the left */
+    color: #fff; /* Ensure text is readable over the background */
+}
+
+.about-image {
+    flex: 1 1 69%; /* Takes 50% of the width */
+    max-width: 69%; /* Restricts the image to 50% width */
+    padding: 120px; /* Adds inner spacing */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    display: flex;
+    justify-content: center; /* Centers the image within its container */
+}
+
+.about-image img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 400px; /* Prevents the image from becoming too large */
+    border-radius: 15px; /* Optional: rounded corners */
+}
+
+
+/* How to Buy Section */
+.how-to-buy-section {
+    background: linear-gradient(to bottom, #E0F7FA, #fff);
+    padding: 80px 0;
+}
+
+.how-to-buy-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: #005B96;
+    font-family: 'Fredoka One', cursive;
+}
+
+.buy-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.buy-step {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    box-sizing: border-box;
+}
+
+.buy-step:hover {
+    transform: translateY(-10px);
+}
+
+.buy-icon {
+    font-size: 3rem;
+    color: #005B96;
+    margin-bottom: 20px;
+}
+
+.buy-info h3 {
+    font-size: 1.8rem;
+    color: #005B96;
+    margin-bottom: 15px;
+}
+
+.buy-info p {
+    font-size: 1rem;
+    color: #002B5B;
+}
+
+/* Swap Section */
+.swap-section {
+    background: linear-gradient(to bottom, #E0F7FA, #fff);
+    padding: 80px 0;
+}
+
+.swap-header {
+    text-align: center;
+    color: #005B96;
+    margin-bottom: 60px;
+}
+
+.swap-header h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+}
+
+.swap-header p {
+    font-size: 1.1rem;
+    color: #002B5B;
+}
+
+.swap-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.swap-icon {
+    flex: 1 1 15%;
+    max-width: 15%;
+    text-align: left;
+    margin: 10px;
+}
+
+.swap-icon img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.swap-info {
+    flex: 1 1 55%;
+    max-width: 55%;
+    text-align: center;
+}
+
+.dex-screenshot {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tokenomics Section */
+.tokenomics-section {
+    background: linear-gradient(to bottom, #E0F7FA, #fff);
+    /*background: url('images/walking shiba3.png') center center / cover no-repeat;*/
+    
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tokenomics-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #005B96;
+    margin-bottom: 60px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.tokenomics-content {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.token-details {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    flex: 1 1 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.token-details h3 {
+    font-size: 2rem;
+    color: #005B96;
+    margin-bottom: 20px;
+}
+
+.token-details p {
+    font-size: 1.1rem;
+    color: #002B5B;
+    line-height: 1.8;
+}
+
+.token-graphic {
+    max-width: 690px;
+}
+
+.token-img {
+    width: 100%; /* Makes the image responsive */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 690px;
+   /*width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);*/
+}
+
+
+
+
+
+
+/* Roadmap Section */
+.roadmap-section {
+    position: relative;
+    background: url('images/DALL·E 2024-11-23 21.18.25 - A dynamic and detailed illustration of a close-up group of rebellious penguins, each with unique characteristics. Some penguins are wearing leather ja.png') center center / cover no-repeat; /* Updated image path */
+    padding: 1px 1px;
+    color: #fff;
+    overflow: hidden;
+    text-align: center;
+    min-height: 20vh; /* Further reduced height for a smaller section */
+}
+
+.roadmap-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 43, 91, 0.6);
+    z-index: 0;
+}
+
+.roadmap-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px; /* Further reduced max-width for smaller content */
+    margin: 0 auto;
+}
+
+.roadmap-content h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 6.9rem; /* Further reduced font size */
+    margin-bottom: 15px;
+}
+
+.roadmap-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Further reduced min-width for smaller phase boxes */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.phase {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px; /* Reduced padding and border-radius for smaller boxes */
+    max-width: 250px;
+    width: 100%;
+    color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.phase:hover {
+    transform: translateY(-5px); /* Hover effect retained but reduced */
+}
+
+.phase h3 {
+    font-size: 1.4rem; /* Further reduced font size */
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.phase ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phase ul li {
+    font-size: 0.9rem; /* Further reduced font size */
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.phase ul li::before {
+    content: '•';
+    color: #FFD700;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .roadmap-content h2 {
+        font-size: 2.5rem; /* Further reduced font size for smaller screens */
+    }
+
+    .phase {
+        padding: 10px;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Disclaimer */
+.disclaimer {
+    max-width: 800px;
+    margin: 60px auto 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    color: #002B5B;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Links */
+.social-links {
+    margin: 40px 0;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: #005B96;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #FFD700;
+}
+
+
+
+/* Footer Styles */
+.site-footer {
+    background: #005B96;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+
+/* Legend Section */
+.legend-section {
+    background: linear-gradient(to bottom, #E0F7FA, #fff);
+    padding: 80px 0;
+}
+
+.legend-section h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #005B96;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+.story-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 1 1 55%;
+    max-width: 55%;
+    color: #002B5B;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.story-image {
+    flex: 1 1 40%;
+    max-width: 40%;
+    text-align: center;
+}
+
+.story-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Comic Section */
+.comic-section {
+    background: linear-gradient(to bottom, #fff, #E0F7FA);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.comic-section h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #005B96;
+    margin-bottom: 20px;
+}
+
+.comic-section p {
+    font-size: 1.1rem;
+    color: #002B5B;
+    margin-bottom: 60px;
+}
+
+.comic-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.comic-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.comic-item img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comic-item img:hover {
+    transform: scale(1.05);
+}
+
+.comic-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #002B5B;
+}
+
+/* Call to Action Section */
+
+
+
+
+
+
+
+/* Call to Action Section */
+.cta-section {
+    background: linear-gradient(to bottom, #E0F7FA, #fff);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #005B96;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #002B5B;
+    margin-bottom: 30px;
+}
+
+.btn.cta-btn {
+    background: #FFD700;
+    color: #002B5B;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn.cta-btn:hover {
+    background: #FFC107;
+}
+
+
+
+
+
+
+
+
+/* Navigation Buttons */
+.story-navigation {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.story-navigation .btn-nav {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.story-navigation .btn-nav:hover {
+    background-color: #34495e;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .site-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .buy-step {
+        max-width: 48%;
+    }
+
+    .roadmap-content {
+        padding: 0 20px;
+    }
+
+    .phases {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .phase {
+        flex: 1 1 45%;
+    }
+
+    .tokenomics-content {
+        flex-direction: column;
+    }
+
+    .story-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .story-text,
+    .story-image {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 150px 0;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        margin-top: 20px;
+    }
+
+    .buy-step {
+        max-width: 100%;
+    }
+
+    .swap-content {
+        flex-direction: column;
+    }
+
+    .phase {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .comic-item {
+        max-width: 80%;
+    }
+}
