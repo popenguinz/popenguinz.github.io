@@ -818,7 +818,7 @@ body, html {
 /* Hide navigation links on small screens */
 @media (max-width: 768px) {
     .site-navigation ul {
-        display: none;
+        /*display: none;*/
         flex-direction: column;
         background-color: rgba(0, 43, 91, 0.9);
         position: absolute;
